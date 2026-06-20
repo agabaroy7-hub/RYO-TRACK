@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RYO TRACK Release</title>
+    <meta
+      name="description"
+      content="Download the latest RYO TRACK Windows installer."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #050816;
+        --panel: rgba(9, 16, 32, 0.88);
+        --panel-border: rgba(255, 255, 255, 0.1);
+        --text: #e6edf7;
+        --muted: #9aa7bf;
+        --accent: #4ade80;
+        --accent-soft: rgba(74, 222, 128, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(74, 222, 128, 0.18), transparent 30%),
+          radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.18), transparent 28%),
+          linear-gradient(180deg, #09111f 0%, var(--bg) 100%);
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+      }
+
+      .card {
+        width: min(860px, 100%);
+        border: 1px solid var(--panel-border);
+        border-radius: 28px;
+        padding: 32px;
+        background: var(--panel);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: #bff7d0;
+        font-size: 12px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0 12px;
+        font-size: clamp(2.4rem, 6vw, 4.8rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 0;
+        max-width: 58ch;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, #4ade80, #84cc16);
+        color: #02120a;
+        box-shadow: 0 18px 40px rgba(74, 222, 128, 0.22);
+      }
+
+      .button-secondary {
+        color: var(--text);
+        border: 1px solid var(--panel-border);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .meta {
+        margin-top: 28px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .meta div {
+        padding: 16px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .meta span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+
+      .meta strong {
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      .footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="eyebrow">RYO TRACK Release</div>
+        <h1>Download the Windows installer.</h1>
+        <p>
+          Use the latest packaged build of RYO TRACK to install the desktop app on Windows.
+          The installer is published alongside this page in the release folder.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="./RYO TRACK Setup 1.0.0.exe" download>Download .exe</a>
+          <a class="button button-secondary" href="../README.md">View project README</a>
+        </div>
+        <div class="meta">
+          <div>
+            <span>Platform</span>
+            <strong>Windows</strong>
+          </div>
+          <div>
+            <span>Package type</span>
+            <strong>NSIS installer</strong>
+          </div>
+          <div>
+            <span>App name</span>
+            <strong>RYO TRACK</strong>
+          </div>
+        </div>
+        <div class="footer">
+          If the installer filename changes in a future build, update this page to match the new release asset.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

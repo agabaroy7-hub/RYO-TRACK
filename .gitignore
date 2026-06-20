@@ -1,4 +1,6 @@
 node_modules/
 .vite/
 dist/
-release/
+release/*
+!release/index.html
+!release/*.exe
